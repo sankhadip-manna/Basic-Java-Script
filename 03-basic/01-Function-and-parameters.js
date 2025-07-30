@@ -47,4 +47,16 @@ const user = {
 function UsreId(Anyobject){
 console.log(`Your Name ${Anyobject.UsreName} Your Price ${Anyobject.price}`)
 }
-UsreId(user)
+// UsreId(user)
+UsreId({
+    username:"lol",
+    price:399
+})
+
+const myarray = [200,3000,400,500]
+function returnSecoundarray(getarray){
+    return getarray[2]
+}
+
+// console.log(returnSecoundarray(myarray))
+console.log(returnSecoundarray([2000,3000,4000,59999]))
