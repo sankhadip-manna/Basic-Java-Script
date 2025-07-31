@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const usre = {
     usrename: "Sankha",
     Usreid: 1324524,
@@ -49,16 +49,16 @@ const addtwo = (num1,num2) => ({usrename:"Sankha"})
 console.log(addtwo(2,4))
 
 
-=======
-const usre = {
+
+// const usre = {
     usrename: "Sankha",
-    Usreid: 1324524,
-    price:999,
-    WelComeMassage: function(){
+    // Usreid: 1324524,
+    // price:999,
+    // WelComeMassage: function(){
         console.log(`${this.usrename}, Welcome To Website`)
         // console.log(this)
-    }
-}
+    // }
+// }
 // usre.WelComeMassage()
 // usre.usrename = "sam"
 // usre.WelComeMassage()
@@ -74,10 +74,10 @@ const usre = {
 //     console.log(this.usrename)
 // }
 // chai()
-const chai = ()=>{
+// const chai = ()=>{
     let usrename="Snakha"
     console.log(this)
-}
+// }
 // chai()
 
 
@@ -93,9 +93,9 @@ const chai = ()=>{
 
 
 
-const addtwo = (num1,num2) => ({usrename:"Sankha"})
+// const addtwo = (num1,num2) => ({usrename:"Sankha"})
 
 
 
 console.log(addtwo(2,4))
->>>>>>> b7e637d4491616cc0fc6f54d79094adf77884e94
+ b7e637d4491616cc0fc6f54d79094adf77884e94
