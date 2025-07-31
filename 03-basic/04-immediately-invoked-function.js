@@ -1,7 +1,9 @@
 // Immediately Invoked Function Expression (IIFE)
 
 
-function chai(){
+(function chai(){
     console.log("DB CONNECTED")
-}
-chai()
+})();
+( (name) =>{
+    console.log(`DB CONTECED TWO ${name}`)
+})('Snakha                 ')
