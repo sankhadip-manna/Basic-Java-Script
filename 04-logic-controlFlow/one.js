@@ -48,7 +48,7 @@ if(UsreAddEmail && UsreAddGoogle){
 } else {
     console.log("You are not entered2")
 }
-if(CareditDebit || UsreAddEmail){
+if(CareditDebit || UsreAddEmail){      //=> || -> This "or" symboll
  console.log("Usre Logged in")
 }
 
