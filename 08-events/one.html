@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Events</title>
+    <style>
+        *{
+            background-color: rgb(43, 41, 41);
+        }
+        #google{
+            color:white;
+        }
+        h2{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Amazing Images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="cludes" src="logocloudes.jpg" alt=""></li>
+    
+    
+            <li><img width="200px" id="clude" src="our coluds 02.jpg" alt=""></li>
+    
+    
+            <li><img width="200px" id="wallpap" src="wallhaven-qzk5pd_1366x768.png" alt="" ></li> 
+            <!-- This is Wrong Use Onclick -->
+            
+    
+    
+            <li><img width="200px" id="wallpaper" src="wallhaven-wy7x97_1366x768.png" alt=""></li>
+            <li><a href="https:google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+        // document.getElementById('wallpap').onclick = function(){
+        //     alert('wallpap clicked')
+        // }
+         //attachedEvent()
+        //JQery - on
+        // type,timestamp, defaultPrevented,
+        // target, toElement, SrcElement, currentTarget,
+        // clientX, clientY, screenX, screenY
+        // altkey , ctrlkey, shiftkey, keyCode
+
+        // document.getElementById('images').addEventListener('click',function(e){
+        //     console.log("Cliked inside ul")
+        // },false)
+        
+        // document.getElementById('wallpap').addEventListener('click',function(e){
+        //     console.log("Clicked This Pic")
+        //     e.stopPropagation()
+        // },false)
+
+
+        // document.getElementById('google').addEventListener('click',function(e){
+        //     e.preventDefault()
+        //     e.stopPropagation()
+        //     console.log("Clicked Google")
+        // }, false)
+
+
+        document.querySelector("#images").addEventListener('click',function(e){
+            console.log(e.target.tagName)
+            if(e.target.tagName === 'IMG'){
+                console.log(e.target.id)
+                let removeIt = e.target.parentNode
+                removeIt.remove()
+
+            }
+
+
+            // console.log(e.target.parentNode)
+
+        },false)
+        
+        
+        
+        //removeIt.parentNode.removeChild(removeIt)
+</script>
+</html>
