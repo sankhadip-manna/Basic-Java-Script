@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 projects with async</title>
+</head>
+<body>
+    <h1>Chai aru JavaScript </h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // const sayData = function(str){
+    //     console.log(str,Date.now())
+
+
+
+
+    // } 
+    // const interValrId = setInterval(sayData,1000,"Hello")
+
+    const NameFunction = function(){
+        console.log("Sankha",Date.now())
+    }
+
+    
+    const startInterval = function(){
+      intervaild=setInterval(NameFunction,1000);
+      console.log("START ")
+    } 
+    const stopInterval = function(){
+      clearInterval(intervaild)
+      console.log("STOPED")
+    }
+    document.querySelector('#start').addEventListener('click',startInterval)
+
+    // clearInterval(startInterval)
+    
+    document.querySelector('#stop').addEventListener('click',stopInterval)
+    
+</script>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>SetInterval and ClearInterval Example</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>SetInterval and ClearInterval Example</h2>
+
+  <p id="counter">Counter: 0</p>
+  <button id="startBtn">Start Interval</button>
+  <button id="stopBtn">Stop Interval</button>
+
+  <script>
+    let count = 0;
+    let intervalId;
+
+    document.getElementById("startBtn").addEventListener("click", function() {
+      // Start interval only if not already running
+      if (!intervalId) {
+        intervalId = setInterval(() => {
+          count++;
+          document.getElementById("counter").textContent = "Counter: " + count;
+        }, 1000);
+      }
+    });
+
+    document.getElementById("stopBtn").addEventListener("click", function() {
+      clearInterval(intervalId);
+      intervalId = null; // reset interval id
+    });
+  </script>
+
+</body>
+</html> -->
