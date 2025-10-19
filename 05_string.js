@@ -14,8 +14,8 @@ const gameName = new String("Sankha-dip Mannna ")
 console.log(gameName.length)
 // console.log(gameName.toUpperCase());
 // console.log(gameName.toLowerCase())
-console.log(gameName.charAt(5));
-console.log(gameName.indexOf('d'))
+console.log(gameName.charAt(5)); //=> String Character Postion Chacke  
+console.log(gameName.indexOf('d')) // => This Same Postion Chacker In the String
 // console.log(gameName.repoCount())
 
 const Newname = gameName.substring(0,4);
